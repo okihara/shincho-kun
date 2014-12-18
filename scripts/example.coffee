@@ -9,6 +9,8 @@
 #   These are from the scripting documentation: https://github.com/github/hubot/blob/master/docs/scripting.md
 
 module.exports = (robot) ->
+  robot.hear /モン/, (msg) ->
+    msg.send "http://blog-imgs-59.fc2.com/n/e/c/necondor/ryou.jpg"
 
   # robot.hear /badger/i, (msg) ->
   #   msg.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
@@ -104,15 +106,4 @@ module.exports = (robot) ->
   # robot.respond /sleep it off/i, (msg) ->
   #   robot.brain.set 'totalSodas', 0
   #   robot.respond 'zzzzz'
-module.exports = (robot) ->
-  robot.hear /ぬるぽ/, (msg) ->
-    msg.send '''
- 
-   Λ＿Λ    ＼＼
-  （ ・∀・）   | | ｶﾞｯ
- と       ）   | |
-   Ｙ /ノ     人
-    / ）     <  >  _Λ∩
- ＿/し' ／／  Ｖ｀Д´）/
- （＿フ彡            / ←>>1
-'''
+
