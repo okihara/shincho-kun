@@ -10,7 +10,7 @@
 
 module.exports = (robot) ->
   robot.hear /モン/, (msg) ->
-    msg.send "http://blog-imgs-59.fc2.com/n/e/c/necondor/ryou.jpg"
+    msg.send "http://blog-imgs-59.fc2.com/n/e/c/necondor/ryou.jpg?" + (new Date().getTime())
 
   # robot.hear /badger/i, (msg) ->
   #   msg.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
