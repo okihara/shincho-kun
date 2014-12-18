@@ -12,6 +12,15 @@ module.exports = (robot) ->
   robot.hear /モン/, (msg) ->
     msg.send "http://blog-imgs-59.fc2.com/n/e/c/necondor/ryou.jpg?" + (new Date().getTime())
 
+  robot.hear /NE$/, (msg) ->
+    msg.send "その語尾とかの一部だけを英語にするのってなんなんすかね？"
+
+  robot.hear /DO$/, (msg) ->
+    msg.send "その語尾とかの一部だけを英語にするのってなんなんすかね？"
+
+  robot.hear /タンス$/, (msg) ->
+    msg.send "http://thumbnail.image.rakuten.co.jp/@0_mall/pinevalue/cabinet/img1/tkc09081850-240.jpg?" + (new Date().getTime())
+
   # robot.hear /badger/i, (msg) ->
   #   msg.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
   #
