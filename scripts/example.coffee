@@ -18,8 +18,8 @@ module.exports = (robot) ->
   robot.hear /DO$/, (msg) ->
     msg.send "その語尾とかの一部だけを英語にするのってなんなんすかね？"
 
-  robot.hear /タンス$/, (msg) ->
-    msg.send "http://thumbnail.image.rakuten.co.jp/@0_mall/pinevalue/cabinet/img1/tkc09081850-240.jpg?" + (new Date().getTime())
+  robot.hear /タンス/, (msg) ->
+    msg.send "http://www.tansu.co.jp/kiritsu-yakikiriF.jpg?" + (new Date().getTime())
 
   # robot.hear /badger/i, (msg) ->
   #   msg.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
